@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainScene.MainActivity">
+
+    <!--backdrop layout here-->
+    <ScrollView
+        style="@style/MyBackdropStyle"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="88dp"
+            android:paddingBottom="144dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/main_backdrop_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--app toolbar here-->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingBottom="8dp"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            style="@style/MyToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:contentInsetStart="0dp"
+            app:navigationIcon="@drawable/lily_logo_menu"
+            app:title="@string/app_name" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--fragment layout here-->
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:elevation="8dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="#ffffff"
+        android:paddingTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

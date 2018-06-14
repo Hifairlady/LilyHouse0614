@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LilyHouse</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_menu_filter_string">Filter</string>
+    <string name="main_menu_search_string">Search</string>
+</resources>
